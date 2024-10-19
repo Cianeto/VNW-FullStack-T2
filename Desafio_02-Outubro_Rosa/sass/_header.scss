@@ -1,0 +1,56 @@
+header {
+	background-color: $cor1;
+	height: 20vh;
+	width: auto;
+	color: $corFonte;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	ul {
+		width: 40vw;
+		padding-right: 30px;
+		padding-left: 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 18px;
+	}
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+	nav ul li a:hover {
+		color: red;
+		text-decoration: underline;
+	}
+}
+.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 18px;
+}
+
+@media (min-width: 100px) and (max-width: 800px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: auto;
+		h1 {
+			font-size: 100%;
+		}
+		ul,
+		.logo {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 2vh;
+			li {
+				padding-top: 1vh;
+			}
+		}
+	}
+}
