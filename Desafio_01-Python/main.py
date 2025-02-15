@@ -39,7 +39,7 @@ num1 = float(num1.replace(',', '.'))
 num2 = input("Digite o segundo número: ")
 num2 = float(num2.replace(',', '.'))
 r = str(num1 + num2).replace('.', ',')
-print("A soma dos dois números digitados é ", r)
+print("Soma dos dois números: ", r)
 
 # Missão 5
 
